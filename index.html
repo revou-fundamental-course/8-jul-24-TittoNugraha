@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator BMI</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <!-- Left Content -->
+    <div class="container">
+        <div class="calculator">
+            <h2>Kalkulator BMI</h2>
+            <p>Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang penampilan, berat badan yang ideal juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu? Yuk, hitung sekarang di Kalkulator BMI.</p>
+
+            <!-- Form -->
+            <div class="form">
+                <div class="input-group">
+                    <label>Jenis Kelamin</label>
+                    <div class="radio-group">
+                        <input type="radio" id="sex-man" name="sex" value="man">
+                        <label for="sex-man">Pria</label>
+                        <input type="radio" id="sex-woman" name="sex" value="woman">
+                        <label for="sex-woman">Wanita</label>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="weight">Berat Badan (kg)</label>
+                    <input type="number" id="weight">
+                </div>
+                <div class="input-group">
+                    <label for="age">Usia (tahun)</label>
+                    <input type="number" id="age">
+                </div>
+                <div class="input-group">
+                    <label for="height">Tinggi badan (cm)</label>
+                    <input type="number" id="height">
+                </div>
+                <div class="buttons">
+                    <button onclick="calculateBMI()">Hitung BMI</button>
+                    <button type="reset" onclick="resetForm()">Reset</button>
+                </div>
+            </div>
+            <h3>Keunggulan Fitur</h3>
+            <p>1. Menghitung berat badan</p>
+            <p>2. Menentukan Kategori berat badan ideal atau tidak</p>
+            <p>3. Mempersiapkan program penurunan berat badan</p>
+            <p>Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh mengandalkan pembacaan BMI ini) dan tidak ada tindakan yang harus diambil berdasarkan nilainya selain berkonsultasi dengan orang yang memenuhi syarat seperti dokter</p>
+            <p>Kalkulator akan memberi Anda gambaran tentang perbandingan berat badan Anda dengan nilai umum. Indeks Massa Tubuh (atau BMI) dihitung sebagai berat badan Anda (dalam kilogram) dibagi dengan kuadrat tinggi badan Anda (dalam meter) atai BMI=Kg/M2</p>
+        </div>
+
+        <!-- Right Content -->
+        <div class="result">
+            <!-- Result Content -->
+            <h2>Hasil</h2>
+            <div class="hasil">
+                <div id="bmi-result">
+                    <p id="bmi-status"></p>
+                    <p id="bmi-value"></p>
+                    <p id="bmi-description"></p>
+                    <button onclick="downloadBMIResult()">Download Hasil BMI</button>
+                </div>
+            </div>
+            <br>
+            <div>
+            <button>Konsultasi Ahli Gizi Via Aplikasi</button>
+            <button>Registrasi Online Ahli Gizi</button>
+            </div>
+            <br>
+            <p>BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan resiko penyakit seseorang. Anda perlu konsultasi lebih lanjut mengenai resiko dan kekhawatiran Anda terkait dengan berat badan Anda</p>
+            <br>
+            <div class="information">
+                <h4>Beberapa Penyakit yang berasal dari kegemukan</h4>
+                <p>Diabetes</p>
+                <p>Hipertensi</p>
+                <p>Sakit Jantung</p>
+                <p>Osteoarthritis</p>
+                <button>Konsultasi Dokter Via Aplikasi</button>
+                <button>Registrasi Online Sekarang</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
